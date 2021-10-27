@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import "./App.scss";
+import Counter from './components/Counter/Counter';
 import { Header } from './components/Header/Header';
 
-//Body Component
+/* //Body Component
 //constructor damit übergibt maan parameters
 class Body extends Component {
 
@@ -14,18 +15,11 @@ class Body extends Component {
         <p>{this.props.num}</p>
         <p>{this.props.myArr[0]}</p>
         <p>{JSON.stringify(this.props.myObj)}</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-
       </div>
     );
   }
 }
-
+ */
 
 //Base comoponent
 export default class App extends Component {
@@ -35,7 +29,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header
+        {/* <Header
           title="Hallo Uyen"
           num={3} myArr={[11, 12, 14]}
           myObj={{ a: 350, b: 380 }}
@@ -46,7 +40,8 @@ export default class App extends Component {
           num={3} myArr={[11, 12, 14]}
           myObj={{ a: 350, b: 380 }}
           myFunc={(a, b) => a + b}
-          multiply={this.multiply} />
+          multiply={this.multiply} /> */}
+        <Counter />
       </div>
     )
   }
