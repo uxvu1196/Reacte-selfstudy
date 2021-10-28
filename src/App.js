@@ -41,7 +41,10 @@ export default class App extends Component {
           myObj={{ a: 350, b: 380 }}
           myFunc={(a, b) => a + b}
           multiply={this.multiply} /> */}
-        <Counter />
+        <Counter initCount={0} />
+        <Counter initCount={20} />
+        <Counter initCount={300} />
+        <Counter initCount={1000} />
       </div>
     )
   }
